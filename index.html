@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERIC Dashboard</title>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ERIC Dashboard</h1>
+
+        <div class="dropdown">
+            <label for="data-view">Select Data View:</label>
+            <select id="data-view">
+                <option value="overview">Overview</option>
+                <option value="performance">Performance</option>
+                <option value="errors">Errors</option>
+            </select>
+        </div>
+
+        <div class="data-container">
+            <div class="battery-level">
+                <h2>Battery Level</h2>
+                <p id="battery-level">Loading...</p>
+            </div>
+            <div class="operational-status">
+                <h2>Operational Status</h2>
+                <p id="operational-status">Loading...</p>
+            </div>
+            <div class="activity-log">
+                <h2>Activity Log</h2>
+                <ul id="activity-log">
+                    <li>Loading...</li>
+                </ul>
+            </div>
+        </div>
+        <button id="refresh-btn">Refresh</button>
+    </div>
+    <script type="module" src="/index.js"></script>
+</body>
+</html>

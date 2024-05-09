@@ -1,0 +1,152 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFC470;
+    color: #333;
+}
+
+.container {
+    max-width: 90%;
+    margin: 4% auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.battery-level,
+.operational-status,
+.activity-log {
+    flex-basis: calc(27%);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #DFD0B8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .battery-level,
+    .operational-status,
+    .activity-log {
+        flex-basis: 100%;
+    }
+}
+
+.battery-level:hover,
+.operational-status:hover,
+.activity-log:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#refresh-btn {
+    display: inline-block;
+    width: 15%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 43%;
+    font-size: 16px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#refresh-btn:hover {
+    background-color: #0056b3;
+}
+
+.dropdown {
+    margin-bottom: 20px;
+    max-width: 20%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.slider-container {
+    margin-bottom: 20px;
+    max-width: 30%;
+}
+
+#time-range {
+    width: 100%;
+}
+
+#selected-time {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    select, #time-range {
+        font-size: 14px;
+    }
+
+    #selected-time {
+        font-size: 14px;
+    }
+}
